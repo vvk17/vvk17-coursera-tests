@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='vvk17MsgApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <style> body {font-size: 1.2em;}</style>
+    <title>Expressions and Interpolations</title>
+  </head>
+  <body>
+    <h1>Expressions and Interpolations</h1>
+    <div ng-controller='vvk17MsgController'>
+      Message is: <br>
+      {{name}} <br>
+      {{sayMessage();}}
+      <div >
+        <button ng-click="showSanSebastian();">Show San-Sebastian</button>
+        <br>
+        <img ng-src="images/san-sebastian-{{noSS}}.jpeg">
+      </div>
+    </div>
+  </body>
+</html>
